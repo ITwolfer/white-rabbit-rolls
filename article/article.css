@@ -1,0 +1,554 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?dqu23a');
+    src:  url('fonts/icomoon.eot?dqu23a#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?dqu23a') format('truetype'),
+      url('fonts/icomoon.woff?dqu23a') format('woff'),
+      url('fonts/icomoon.svg?dqu23a#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-header:before {
+    content: "\f1dc";
+  }
+  .icon-image:before {
+    content: "\e90d";
+  }
+  .icon-quotes-left:before {
+    content: "\e977";
+  }
+  .icon-list-numbered:before {
+    content: "\e9b9";
+  }
+  .icon-list2:before {
+    content: "\e9bb";
+  }
+  .icon-link:before {
+    content: "\e9cb";
+  }
+  .icon-bold:before {
+    content: "\ea62";
+  }
+  .icon-underline:before {
+    content: "\ea63";
+  }
+  .icon-italic:before {
+    content: "\ea64";
+  }
+  .icon-embed:before {
+    content: "\ea7f";
+  }
+  .icon-embed2:before {
+    content: "\ea80";
+  }
+  
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-embed2 {
+  width: 1.25em;
+}
+
+.icon-plus {
+  width: 0.7857142857142857em;
+}
+
+.icon-search {
+  width: 0.9285714285714285em;
+}
+
+.icon-star {
+  width: 0.9285714285714285em;
+}
+
+.icon-star-o {
+  width: 0.9285714285714285em;
+}
+
+.icon-user {
+  width: 0.7142857142857142em;
+}
+
+.icon-clock-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-book1 {
+  width: 0.9302142857142857em;
+}
+
+.icon-thumbs-o-up {
+  width: 0.8571428571428571em;
+}
+
+.icon-caret-down {
+  width: 0.5714285714285714em;
+}
+
+.icon-file-text-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-angle-right {
+  width: 0.33928571428571425em;
+}
+
+.icon-smile-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-rss-square {
+  width: 0.8571428571428571em;
+}
+
+body{
+    background-color: rgb(244, 245, 245);
+}
+nav{
+width: 100%;
+height: 73px;
+background-color: #fff;
+border-bottom: 1px solid rgb(241, 241, 241);
+}
+.topbox{
+    width:1382.4px;
+    height: 73px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(241, 241, 241);
+
+}
+.logo{
+    /* display: inline-block; */
+    width: 107px;
+    height: 22px;
+    /* margin: auto 0; */
+    /* line-height: 73px; */
+    float: left;
+    margin-top: 25.5px;
+
+}
+.navbtn{
+    display: flex;
+    float: left;
+    height: 22px;
+    width: 500px;
+    /* background-color: red; */
+    justify-content: space-between;
+    margin-left: 30px;
+    background-color: #fff;
+
+}
+.navbtn li{
+    /* float: left; */
+    display: flex;
+    height: 73px;
+    font-size: 15px;
+    line-height: 73px;
+    background-color: #fff;
+}
+
+.navbtn li a{
+    background-color: #fff;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    color: rgb(81,87,103);
+}
+.navbtn .frinav a,.nav_sec .frinav a,.art_nav .frinav a{
+    color: rgb(30, 128, 255);
+}
+.downline:hover{
+    border-bottom: 2px solid rgb(30,128,255);   
+}
+.navbtn li a:hover{
+    color: rgb(37,41,51);
+}
+.kfza{
+    background-color: #fff;
+}
+.kfz{
+    float: left;
+    margin-left: 30px;
+    margin-top: 17px;
+    width: 120px;
+    height: 38px;
+}
+.scarch{
+    height: 35px;
+    width: 254px;
+    margin-top: 18px;
+    margin-left: 27px;
+    font-family: 'icomoon';
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1.5px solid rgb(194,200,209);
+    float: left;
+}
+input{
+    float: left;
+    width: 200px;
+    height: 28px;
+    padding-left: 10px;
+    color: rgb(192,196,203);
+    /* border: 2px solid black; */
+    background-color: #fff;
+}
+button{
+    float: left;
+    width: 40px;
+    margin-left: 10px;
+    height: 30px;
+    margin-top: 1px;
+    border-radius: 2px;
+    font-family: 'icomoon';
+}
+.creater{
+    float: left;
+    height: 35px;
+    width: 110px;
+    background-color: rgb(30,128,255);
+    margin-top: 18px;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 15px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+.c_down{
+    float: left;
+    height: 35px;
+    width: 15px;
+    margin-top: 18px;
+    margin-left: 0.8px;
+    font-size: 12px;
+    background-color: rgb(30,128,255);
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.creater:hover,.c_down:hover{
+    background-color: rgb(17,113,238);
+}
+.huiyuanlogo{
+    float: left;
+    height: 33px;
+    width: 61px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: url(C:\Users\kong\Desktop\掘金项目\images\huiyuan1.png);
+}
+.log{
+    /* float:left; */
+    position: absolute;
+    width: 70px;
+    height: 35px;
+    margin-top: 18px;
+    border: 1px solid rgb(179, 213, 255);
+    background-color: rgb(244,249,255);
+    color: rgb(28,141,255);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.main{
+    position: relative;
+    width: 1140px;
+    height: 800px;
+    /* background-color: #fff; */
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.artbtn{
+    position: absolute;
+    float: left;
+    width: 80px;
+    height: 600px;
+    /* background-color: blue; */
+    left: -100px;
+    
+}
+.btnt,.btnb{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btnt{
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 45px;
+    border-bottom: 1px solid rgb(228,230,235);
+}
+.artbtn li{
+    width: 45px;
+    height: 45px;
+    background-color: rgb(255,255,255);
+    border-radius: 50%;
+    margin:  0 auto;
+    margin-bottom: 20px;
+}
+.btnt li,
+.btnb li{
+    line-height: 45px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(138,145,159);
+    font-family: 'icomoon';
+}
+.btnt li a:hover,
+.btnb li a:hover{
+    color: rgb(81,87,103);
+}
+.btnb{
+    margin-top: 20px;
+}
+.artbody{
+    float: left;
+    width: 820px;
+    height: 800px;
+    background-color: #fff;
+}
+.artother{
+    float: right;
+    width: 300px;
+    height: 800px;
+    /* background-color: #fff; */
+}
+.artinfo{
+    width: inherit;
+    position: relative;
+    overflow: hidden;
+    padding-right: 50px;
+}
+.artinfo h1{
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 32px;
+    color: black;
+}
+.artbody img{
+    float: left;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+.artbody h4{
+    font-size: 17px;
+    font-weight: 350;
+    float: left;
+    margin-left: 15px;
+    margin-top: 12px;
+    color: rgb(87,87,103);
+}
+.artbody p{
+    float: left;
+    font-size: 14.5px;
+    margin-left: -112px;
+    margin-top: 38px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.follow{
+    float: left;
+    width: 75px;
+    height: 36px;
+    font-size: 17px;
+    border: 1px solid rgb(179,213,255);
+    background-color: rgb(243,247,255);
+    color: rgb(30,128,255);
+    text-align: center;
+    line-height: 36px;
+    border-radius: 4px;
+    font-weight: 350;
+    margin-left: 395px;
+    margin-top: 23px;
+}
+.follow:hover{
+    background-color: rgb(232,242,255);
+}
+.o_winfo{
+    width: inherit;
+    height: 90px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(228,230,235);
+}
+.o_winfo .wimg{
+    float: left;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.o_winfo h4{
+    float: left;
+    margin-left: 17px;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 360;
+    color: rgb(0, 0, 0);
+}
+.o_winfo p{
+    float: left;
+    margin-left: 18px;
+    font-size: 14px;
+    color: rgb(81,87,103);
+    font-weight: 360;
+    font-family: 'icomoon';
+}
+.o_oinfo{
+    width: inherit;
+    height: 90px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.o_oinfo p{
+    margin-top: 13px;
+    margin-left: 22px;
+    font-size: 14px;
+    color: black;
+    font-family: 'icomoon';
+}
+.gg{
+    margin-top: 18px;
+}
+.gg img{
+    width: 300px;
+    height: auto;
+}
+.ewm{
+    position: relative;
+    margin-top: 18px;
+    width: 300px;
+    height: 80px;
+    background-color: #fff;
+}
+.ewm img{
+    float: left;
+    width: 55px;
+    height: 55px;
+    margin-top: 15.5px;
+    margin-left: 20px;
+}
+.ewm h4{
+    float: left;
+    font-size: 17px;
+    font-weight: 350;
+    margin-top: 20px;
+    margin-left: 15px;
+    color: black;
+}
+.ewm p{
+    float: left;
+    font-size: 14px;
+    margin-left: 15px;
+    color: rgb(138,145,159);
+}
+.reart{
+    background-color: #fff;
+    width: 300px;
+    margin-top: 20px;
+    padding-bottom:5px ;
+}
+.rehd{
+    width: 260px;
+    margin: 0 auto;
+    height: 60px;
+    border-bottom: 1px solid rgb(228,230,235);
+}
+.rehd p{
+    font-size: 15px;
+    line-height: 60px;
+    color: black;
+}
+.reamain{
+    width:inherit;
+}
+.reamain li{
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+.reamain li h3{
+    font-size: 16px;
+    font-weight: 360;
+    color: black;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+.reamain li a h3:hover{
+    color: rgb(30,128,255);
+}
+.reamain li p{
+    margin-top: 6px;
+    margin-left: 5px;
+    font-size: 13px;
+    color: rgb(138,145,151);
+}
+.mulu{
+    background-color: #fff;
+    width: 300px;
+    margin-top: 20px;
+    padding-bottom:5px ;
+}
+.mulu .muluhd{
+    width: 260px;
+    margin: 0 auto;
+    height: 60px;
+    border-bottom: 1px solid rgb(228,230,235);
+}
+.muluhd p{
+    font-size: 15px;
+    line-height: 60px;
+    color: black;
+}
+.mulumain{
+    background-color: #fff;
+    width: 300px;
+}
+.mulumain li{
+    width: 270px;
+    margin: 0 auto;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 8px;
+}
+.mulumain li p{
+    margin-left: 6px;
+    font-size: 14px;
+    color: black;
+}
+.mulumain  .frili p{
+    color: rgb(30,128,255);
+}
+.mulumain a li:hover{
+    background-color: rgb(241, 242, 245);
+}
