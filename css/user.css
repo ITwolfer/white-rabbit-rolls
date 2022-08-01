@@ -1,0 +1,778 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?dqu23a');
+    src:  url('fonts/icomoon.eot?dqu23a#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?dqu23a') format('truetype'),
+      url('fonts/icomoon.woff?dqu23a') format('woff'),
+      url('fonts/icomoon.svg?dqu23a#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    /* speak: never; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-header:before {
+    content: "\f1dc";
+  }
+  .icon-image:before {
+    content: "\e90d";
+  }
+  .icon-quotes-left:before {
+    content: "\e977";
+  }
+  .icon-list-numbered:before {
+    content: "\e9b9";
+  }
+  .icon-list2:before {
+    content: "\e9bb";
+  }
+  .icon-link:before {
+    content: "\e9cb";
+  }
+  .icon-bold:before {
+    content: "\ea62";
+  }
+  .icon-underline:before {
+    content: "\ea63";
+  }
+  .icon-italic:before {
+    content: "\ea64";
+  }
+  .icon-embed:before {
+    content: "\ea7f";
+  }
+  .icon-embed2:before {
+    content: "\ea80";
+  }
+  
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-embed2 {
+  width: 1.25em;
+}
+
+.icon-plus {
+  width: 0.7857142857142857em;
+}
+
+.icon-search {
+  width: 0.9285714285714285em;
+}
+
+.icon-star {
+  width: 0.9285714285714285em;
+}
+
+.icon-star-o {
+  width: 0.9285714285714285em;
+}
+
+.icon-user {
+  width: 0.7142857142857142em;
+}
+
+.icon-clock-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-book1 {
+  width: 0.9302142857142857em;
+}
+
+.icon-thumbs-o-up {
+  width: 0.8571428571428571em;
+}
+
+.icon-caret-down {
+  width: 0.5714285714285714em;
+}
+
+.icon-file-text-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-angle-right {
+  width: 0.33928571428571425em;
+}
+
+.icon-smile-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-rss-square {
+  width: 0.8571428571428571em;
+}
+
+  
+body{
+    background-color: rgb(244, 245, 245);
+}
+nav{
+    overflow: hidden;
+    width: 100%;
+    height: 73px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(241, 241, 241);
+}
+.topbox{
+    overflow: hidden;
+
+    width:1382.4px;
+    height: 73px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(241, 241, 241);
+
+}
+.logo{
+    /* display: inline-block; */
+    width: 107px;
+    height: 22px;
+    /* margin: auto 0; */
+    /* line-height: 73px; */
+    float: left;
+    margin-top: 25.5px;
+
+}
+.navbtn{
+    display: flex;
+    float: left;
+    height: 22px;
+    width: 500px;
+    /* background-color: red; */
+    justify-content: space-between;
+    margin-left: 30px;
+    background-color: #fff;
+
+}
+.navbtn li{
+    /* float: left; */
+    display: flex;
+    height: 73px;
+    font-size: 15px;
+    line-height: 73px;
+    background-color: #fff;
+}
+
+.navbtn li a{
+    background-color: #fff;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    color: rgb(81,87,103);
+}
+.navbtn .frinav a,.nav_sec .frinav a,.art_nav .frinav a{
+    color: rgb(30, 128, 255);
+}
+.downline:hover{
+    border-bottom: 2px solid rgb(30,128,255);   
+}
+.navbtn li a:hover{
+    color: rgb(37,41,51);
+}
+.kfza{
+    background-color: #fff;
+}
+.kfz{
+    float: left;
+    margin-left: 30px;
+    margin-top: 17px;
+    width: 120px;
+    height: 38px;
+}
+.scarch{
+    height: 35px;
+    width: 254px;
+    margin-top: 18px;
+    margin-left: 27px;
+    font-family: 'icomoon';
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1.5px solid rgb(194,200,209);
+    float: left;
+}
+input{
+    float: left;
+    width: 200px;
+    height: 28px;
+    padding-left: 10px;
+    color: rgb(192,196,203);
+    /* border: 2px solid black; */
+    background-color: #fff;
+}
+button{
+    float: left;
+    width: 40px;
+    margin-left: 10px;
+    height: 30px;
+    margin-top: 1px;
+    border-radius: 2px;
+    font-family: 'icomoon';
+}
+.creater{
+    float: left;
+    height: 35px;
+    width: 110px;
+    background-color: rgb(30,128,255);
+    margin-top: 18px;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 15px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+
+}
+.c_down{
+    float: left;
+    height: 35px;
+    width: 15px;
+    margin-top: 18px;
+    margin-left: 0.8px;
+    font-size: 12px;
+    background-color: rgb(30,128,255);
+    color: #fff;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.creater:hover,.c_down:hover{
+    background-color: rgb(17,113,238);
+}
+.huiyuanlogo{
+    float: left;
+    height: 33px;
+    width: 61px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: url(../images\huiyuan1.png);
+}
+.log{
+    /* float:left; */
+    position: absolute;
+    width: 70px;
+    height: 35px;
+    margin-top: 18px;
+    border: 1px solid rgb(179, 213, 255);
+    background-color: rgb(244,249,255);
+    color: rgb(28,141,255);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.writer .get{
+    font-family: 'icomoon';
+}
+.pernav{
+    /* display: none; */
+    width: inherit;
+    height: 55px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(228,230,235);
+    position: relative;
+}
+.pernav a img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-top: 8.5px;
+    margin-left: 303.8px;
+    float: left;
+}
+.pernav .good{
+    font-family: 'icomoon';
+}
+.pernav a div,
+.actnav a div{
+    float: left;
+    font-size: 16px;
+    margin-left: 35px;
+    margin-top: 13px;
+}
+
+.pernav .frin div{
+    color: rgb(37,41,51);
+}
+.pernav a div:hover,
+.actnav a div:hover{
+    color: rgb(137,141,153);
+}
+.pernav button{
+    float: left;
+    width: 110px;
+    height: 36px;
+    border:  1px solid rgb(108,186,69);
+    color: rgb(108,186,69);
+    font-size: 16px;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 8.5px;
+    margin-left: 35px;
+    border-radius: 3px;
+    background-color: #fff;
+}
+.pernav button:hover{
+    color: rgb(138,202,106);
+}
+.pernav span{
+    margin-left: 200px;
+    line-height: 55px;
+    font-family: 'icomoon';
+
+}
+.pernav span,
+.actnav span{
+    float: left;
+    font-size: 15px;
+    font-family: 'icomoon';
+    
+}
+.actnav .good{
+    font-family: 'icomoon';
+}
+.actnav span{
+    margin-left: 160px;
+    line-height: 45px;
+    font-family: 'icomoon';
+
+}
+main{
+    width: 1000px;
+    margin: 0 auto;
+    height: 500px;
+    margin-top: 20px;
+}
+.m_body{
+    width: 720px;
+    /* height: 200px; */
+    /* background-color: #fff; */
+    float: left;
+    
+}
+
+.writer{
+    position: relative;
+    width: inherit;
+    height: 200px;
+    background-color: #fff;
+}
+.writer img{
+    position: absolute;
+    margin-top: 34.5px;
+    margin-left: 25px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.writer h2{
+    position: absolute;
+    margin-top: 35px;
+    font-size: 27px;
+    margin-left: 150px;
+    color: black;
+    font-weight: 450;
+}
+.writer p{
+    font-size: 16px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 150px;
+    font-weight: 350;
+}
+.writer button{
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    width: 110px;
+    height: 32px;
+    background-color: #fff;
+    border: 1px solid rgb(108,186,69);
+    color: rgb(108,186,69);
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 3px;
+}
+.writer button:hover{
+    color: rgb(138,202,106);
+    border: 1.5px solid rgb(138,202,106);
+}
+.get{
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+    font-size: 16px;
+    width: 640px;
+    line-height: 40px;
+    height: 45px;
+    border-top: 1.5px solid rgb(228,230,235);
+    color: black;
+}
+.get span{
+    position: absolute;
+    right: 5px;
+}
+.act{
+    display: block;
+}
+.actnav{
+    width: inherit;
+    height: 50px;
+    margin-top: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(228,230,235);
+}
+.actnav a div{
+    margin-top: 0px;
+    line-height: 42px;
+}
+.actnav .frin div{
+    color: rgb(37,41,51);
+}
+.dt{
+    width: inherit;
+}
+.dtt{
+    height: 45px;
+    border-bottom: 1px solid rgb(235,235,235);
+    color: rgb(138,154,169);
+    line-height: 45px;
+    font-size: 13px;
+    padding-left: 30px;
+    background-color: #fff;
+
+}
+.dtt a{
+    color: rgb(21, 19, 19);
+}
+.dtbody{
+    width: inherit;
+    background-color: #fff;
+}
+.dthd{
+    position: relative;
+    /* margin-top: 10px; */
+    height: 60px;
+    padding-top: 10px;
+
+}
+.dthd img{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 30px;
+    top: 15px;
+    border-radius: 50%;
+}
+.dthd h4{
+    position: absolute;
+    font-size: 15px;
+    top: 16px;
+    left: 85px;
+    color: black;
+}
+.dthd p{
+    position: absolute;
+    font-size: 13px;
+    left: 85px;
+    top: 40px;
+}
+.dthd button{
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    top: 10px;
+    right: 20px;
+    border-radius: 2px;
+    color: rgb(138,202,106);
+    background-color: #fff;
+    border: 1px solid rgb(138,202,106);
+}
+.dtcont{
+    margin-left: 56px;
+    padding: 6px 20px 10px;
+    border-bottom: 1px solid rgb(235,235,235);
+}
+
+.dtcont h4{
+    font-size: 17px;
+    color: #17181a;
+    width: 550px;
+}
+.dtcont p{
+    display: inline-block;
+    font-size: 15px;
+    width: 550px;
+    color: #5c6066;
+    margin-top: 10px;
+}
+.dtcont img{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: -50px;
+}
+.dtbtn{
+    border-top: 1px solid rgb(235,235,235);
+}
+.dtbtn ul{
+    width: 720px;
+    height: 35px;
+    background-color: #fff;
+    /* display: flex; */
+    line-height: 35px;
+}
+.dtbtn ul li{
+    float: left;
+    width: 240px;
+    height: 25px;
+    line-height: 25px;
+    margin-top: 5px;
+    text-align: center;
+    font-size: 13.5px;
+    color: rgb(138,147,160);
+    border-right: 1px solid rgb(228,230,235);
+    font-family: 'icomoon';
+}
+#lastn li{
+    border: none;
+}
+.dtbtn a li{
+    color: rgb(161,169,179);
+}
+.follow{
+    position: relative;
+    margin-top: 10px;
+    width: inherit;
+    height: 70px;
+    background-color: #fff;
+}
+.follow img{
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.follow h5{
+    position: absolute;
+    top: 15px;
+    font-size: 15px;
+    left: 100px;
+    font-weight: 400;
+}
+.follow h5 a{
+    font-weight: 550;
+}
+.follow h5 a:hover{
+    color: #17181a;
+}
+.follow p{
+    bottom: 10px;
+    position: absolute;
+    font-size: 12.8px;
+    left: 100px;
+}
+.art{
+    display: none;
+    width: 720px;
+}
+.artnav{
+    position: relative;
+    width: 720px;
+    height: 55px;
+    background-color: #fff;
+}
+.artnav h4{
+    display: inline-block;
+    line-height: 55px;
+    font-size: 15px;
+    color: #17181a;
+    margin-left: 35px;
+}
+.artnav div{
+    padding-right: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 75px;
+    font-size: 15px;
+    top: 15px;
+    border-right: 2px solid rgb(218,221,215);
+}
+.artnav span{
+    display: inline-block;
+    font-size: 15px;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+}
+.artm{
+    margin-top: 3px;
+    width: inherit;
+    
+}
+.artm .arthd{
+    width: inherit;
+    height: 30px;
+    background-color: #fff;
+    line-height: 12.5px;
+}
+.arthd ul{
+    width: 400px;
+    display: flex;
+    margin-left: 10px;
+}
+.arthd ul li{
+    padding-right: 10px;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding-top: -10px;
+    height: 15px;
+    font-size: 13px;
+    border-right: 2px solid rgb(235,235,235);
+
+}
+.artwri{
+    position: relative;
+    width: inherit;
+    height: 115px;
+    background-color: #fff;
+    padding-left: 15px;
+}
+.artm .artwri h3{
+    position: absolute;
+    font-size: 16px;
+    color: #17181a;
+    left: 25px;
+    top: 15px;
+}
+.artwri p{
+    position: absolute;
+    font-size: 13px;
+    left: 25px;
+    top: 50px;
+}
+.artwri img{
+    position: absolute;
+    width: 150px;
+    height: 95px;
+    right: 40px;
+    top: 15px;
+}
+.artwri ul{
+    position: absolute;
+    top: 80px;
+    left: 1px;
+    font-size: 13px;
+}
+.artwri ul li{
+    float: left;
+    margin-left: 25px;
+    font-family: 'icomoon';
+}
+
+
+
+
+.m_other{
+    width: 260px;
+    /* height: 500px; */
+    float: right;
+    /* background-color: #fff; */
+
+}
+.pers{
+    width: inherit;
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(228,230,235);
+    padding-left: 20px;
+}
+.pers p{
+    line-height: 50px;
+    font-size: 15px;
+    color: #31445b;
+    font-weight: 600;
+}
+.m_other ul{
+    width: inherit;
+    height: 185px;
+    padding-top: 2px;
+    background-color: #fff;
+
+}
+.m_other ul li{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 40px;
+    color: rgb(0,0,0);
+
+}
+.sebox{
+    width: inherit;
+    height: 80px;
+    margin-top: 20px;
+    background-color: #fff;
+}
+.sebox span{
+    float: left;
+    font-size: 17px;
+    display: inline-block;
+    height: 40px;
+    width: 50%;
+    border-left: 3px solid rgb(248,248,248);
+    margin-top: 20px;
+}
+#fribox{
+    border: none;
+}
+.sebox span h4{
+    margin-left: 32px;
+    margin-top: -1px;
+    font-size: 18px;
+}
+.sebox span p{
+    margin-left: 45px;
+}
+.last div{
+    position: relative;
+    width: inherit;
+    height: 50px;
+    border-bottom: 1px solid rgb(228,230,235);
+}
+.last h5{
+    position: absolute;
+    font-size: 16px;
+    top: 13px;
+    left: 2px;
+    color: black;
+}
+
+.last p{
+    position: absolute;
+    font-size: 14px;
+    right: 10px;
+    top: 15px;
+    color: black;
+
+}
